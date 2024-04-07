@@ -1,0 +1,20 @@
+
+.main-notfound__container {
+  position: relative;
+}
+
+
+
+.main-notfound__paragraph {
+  font-size: 20px;
+  color: black;
+  position: absolute;
+  right: 60px;
+  bottom: 50px;
+}
+
+.main-notfound__paragraph a {
+  color: #d90429;
+  font-weight: bold;
+  font-size: 28px;
+}

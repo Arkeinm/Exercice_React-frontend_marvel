@@ -1,0 +1,40 @@
+header {
+  background-color: #111111;
+  min-height: 70px;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__img-and-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.img-container {
+  height: 70px;
+  margin-right: 30px;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  padding: 25px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+nav a:hover {
+  background-color: #191f22;
+}
+
+.header__connexion :first-child {
+  margin-right: 20px;
+}

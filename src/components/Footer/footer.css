@@ -1,0 +1,26 @@
+footer {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  background-color: #111111;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p, footer a {
+  font-size: 17px;
+}
+
+footer p{
+  text-decoration: none;
+  color: white;
+}
+
+footer a {
+  font-weight: bold;
+  color: #d90429;
+}

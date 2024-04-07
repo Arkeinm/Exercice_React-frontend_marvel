@@ -1,0 +1,61 @@
+.main-comics .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0 0 0;
+}
+
+.main-comics__all-comics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  row-gap: 30px;
+  padding: 30px 0;
+}
+
+.main-comics__comic {
+  position: relative;
+  width: 248px;
+  height: 300px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.main-comics__comic-link {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.main-comics__comic:hover {
+  background-color: #111111;
+}
+
+.main-comics__comic-link h3 {
+  padding: 0 6px;
+  margin-bottom: 20px;
+}
+
+.main-comics__comics__img {
+  height: 200px;
+  width: 200px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.5s;
+}
+
+.main-comics__comics__img:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.1);
+  filter: brightness(1.1);
+}
+
+.main-comics__comic:hover .heart-icon {
+  visibility: visible;
+}

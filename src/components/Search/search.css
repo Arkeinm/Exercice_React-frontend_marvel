@@ -1,0 +1,29 @@
+.search-bar {
+  position: relative;
+  opacity: 0.9;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.search-input {
+  background-color: #f5f6f7;
+  border: none;
+  border-radius: 10px;
+  font-family: Maison Neue;
+  font-size: 16px;
+  height: 37px;
+  outline: none;
+  padding-left: 40px;
+  width: 410px;
+}
+
+.search-icon {
+  position: absolute;
+  color: #111111;
+  left: 7px;
+  top: 10px;
+}
