@@ -14,7 +14,7 @@ const Comics = ({ cookieToken, favoriteComics, setFavoriteComics }) => {
     const requestAxios = async () => {
       try {
         const response = await axios.get(
-          `${import.meta.env.VITE_COMICS_LINK}`
+          `${import.meta.env.VITE_COMICS_LINK}?title=${searchComics}`
         );
         setData(response.data.results);
         setIsLoading(false);

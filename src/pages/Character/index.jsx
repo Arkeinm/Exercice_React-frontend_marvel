@@ -15,7 +15,7 @@ const Character = ({ favoriteCharacters, setFavoriteCharacters }) => {
     const requestAxiosCharacter = async () => {
       try {
         const responseCharacter = await axios.get(
-          `http://localhost:3000/characters/${id}`
+          `${import.meta.env.VITE_CHARACTER_LINK}/${id}`
         );
         setDataCharacter(responseCharacter.data);
         setIsLoadingCharacter(false);

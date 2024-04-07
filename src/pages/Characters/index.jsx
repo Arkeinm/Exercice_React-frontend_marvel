@@ -18,7 +18,9 @@ const Characters = ({
   useEffect(() => {
     const requestAxios = async () => {
       try {
-        const response = await axios.get(`${import.meta.env.VITE_CHARACTERS_LINK}`);
+        const response = await axios.get(
+          `${import.meta.env.VITE_CHARACTERS_LINK}?name=${searchCharacters}`
+        );
         setData(response.data.results);
         setIsLoading(false);
       } catch (error) {
