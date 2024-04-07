@@ -15,7 +15,7 @@ const Character = ({ favoriteCharacters, setFavoriteCharacters }) => {
     const requestAxiosCharacter = async () => {
       try {
         const responseCharacter = await axios.get(
-          `${import.meta.env.VITE_CHARACTER_LINK}/${id}`
+          `${import.meta.env.VITE_CHARACTERS_LINK}/${id}`
         );
         setDataCharacter(responseCharacter.data);
         setIsLoadingCharacter(false);
@@ -26,7 +26,7 @@ const Character = ({ favoriteCharacters, setFavoriteCharacters }) => {
     const requestAxiosComicsCharacter = async () => {
       try {
         const responseComics = await axios.get(
-          `${import.meta.env.VITE_CHARACTER_LINK}`
+          `${import.meta.env.VITE_CHARACTER_LINK}/${id}`
         );
         setDataComicsCharacter(responseComics.data.comics);
         setIsLoadingComicsCharacter(false);
